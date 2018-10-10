@@ -24,6 +24,7 @@ filetype off
     Plugin 'godlygeek/tabular'
     Plugin 'junegunn/goyo.vim'
     Plugin 'buoto/gotests-vim'
+    Plugin 'dylanaraps/wal.vim'
 
     call vundle#end()
     filetype plugin indent on
@@ -41,7 +42,7 @@ filetype off
     " Use system clipboard (MacOS)
     set clipboard=unnamed
 
-    colorscheme onedark
+    colorscheme wal
     set guifont=Monospace\ 13
 
     " Tab settings
