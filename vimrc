@@ -1,4 +1,4 @@
-" Author: Jayden Chan
+" Author: Cobey Hollier
 
 set nocompatible
 
@@ -25,6 +25,7 @@ filetype off
     Plugin 'junegunn/goyo.vim'
     Plugin 'buoto/gotests-vim'
     Plugin 'dylanaraps/wal.vim'
+    Plugin 'sheerun/vim-polyglot'
 
     call vundle#end()
     filetype plugin indent on
@@ -38,11 +39,12 @@ filetype off
     " 256 colors
     set t_Co=256
     set t_ut=
+    set termguicolors
 
     " Use system clipboard (MacOS)
     set clipboard=unnamed
 
-    colorscheme wal
+    colorscheme onedark
     set guifont=Monospace\ 13
 
     " Tab settings
@@ -95,15 +97,17 @@ filetype off
 
     " Leader
     let mapleader = "\<Space>"
-    " Remaps keys for dvorak movement
-    noremap j gk
-    noremap k gj
+    " Remaps keys for movement
+    noremap h h
+    noremap t gk
+    noremap n gj
+    noremap s l
 
     " Maps the keys for jumping to end of line, or up/down 10 lines
     noremap H g^
-    noremap L g$
-    noremap J 10<c-u>
-    noremap K 10<c-d>
+    noremap S g$
+    noremap T 10<c-u>
+    noremap N 10<c-d>
 
     " Maps keys for moving between windows
     nnoremap <leader>h <c-w>h
