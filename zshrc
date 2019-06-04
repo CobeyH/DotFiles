@@ -71,23 +71,29 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 alias god='cd ~/go/src/github.com/jayden-chan/battlesnake'
-alias start='docker pull sendwithus/battlesnake-server
-docker run --rm -it -p 3000:3000 sendwithus/battlesnake-server'
-alias connect='ssh cobeyhollier@shell.seng.uvic.ca'
-alias school='cd /Users/cobeyhollier/Library/Mobile\ Documents/com~apple~CloudDocs/UVIC'
+
+# SSH Alias
+alias sengconnect='ssh cobeyhollier@shell.seng.uvic.ca'
+alias cscconnect='ssh cobeyhollier@linux.csc.uvic.ca'
+
+# Quick CD changing
+alias school='cd /Users/cobeyhollier/Library/Mobile\ Documents/com~apple~CloudDocs/UVIC/Y2S3'
+
+# Typo Fixing
+alias claer='clear'
+alias clera='clear'
+alias crela='clear'
+alias celar='clear'
 
 prompt_dir() {
   prompt_segment blue black "${PWD##*/} ~"
 }
-function wallpaper (){
-    wal -i $1 -n
+function maketex() {
+    latexmk -pdf -pvc $1
 }
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -106,8 +112,4 @@ function wallpaper (){
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 #

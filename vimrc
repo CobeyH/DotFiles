@@ -9,23 +9,22 @@ filetype off
     set rtp+=$HOME/.vim/bundle/Vundle.vim
     call vundle#begin()
 
-    Plugin 'VundleVim/Vundle.vim'
-    Plugin 'scrooloose/nerdtree'
+    Plugin 'VundleVim/Vundle.vim' "Package manager for Vim
+    Plugin 'scrooloose/nerdtree' "View on side for fast file selection
     Plugin 'MarcWeber/vim-addon-mw-utils'
     Plugin 'tomtom/tlib_vim'
-    Plugin 'garbas/vim-snipmate'
+    Plugin 'garbas/vim-snipmate' "Snippet manager
     Plugin 'vim-airline/vim-airline'
     Plugin 'gcmt/taboo.vim'
     Plugin 'jiangmiao/auto-pairs'
-    Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
+    Plugin 'tiagofumo/vim-nerdtree-syntax-highlight' "Helped for Nerdtree
     Plugin 'tpope/vim-commentary'
     Plugin 'tpope/vim-surround'
-    Plugin 'jayden-chan/onedark.vim'
-    Plugin 'godlygeek/tabular'
+    Plugin 'jayden-chan/onedark.vim' "Theme plugin
+    Plugin 'godlygeek/tabular' "Allignment automation
     Plugin 'junegunn/goyo.vim'
-    Plugin 'buoto/gotests-vim'
-    Plugin 'dylanaraps/wal.vim'
-    Plugin 'sheerun/vim-polyglot'
+    Plugin 'buoto/gotests-vim' "Testing plugin for go
+    Plugin 'sheerun/vim-polyglot' "Syntax highlighting for many languages
 
     call vundle#end()
     filetype plugin indent on
@@ -45,7 +44,7 @@ filetype off
     set clipboard=unnamed
 
     colorscheme onedark
-    set guifont=Monospace\ 13
+    set guifont=Monospace\ 20
 
     " Tab settings
     set expandtab
