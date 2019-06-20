@@ -14,17 +14,17 @@ filetype off
     Plugin 'MarcWeber/vim-addon-mw-utils'
     Plugin 'tomtom/tlib_vim'
     Plugin 'garbas/vim-snipmate' "Snippet manager
-    Plugin 'vim-airline/vim-airline'
-    Plugin 'gcmt/taboo.vim'
-    Plugin 'jiangmiao/auto-pairs'
+    Plugin 'vim-airline/vim-airline' "Stutus Indicator
+    Plugin 'jiangmiao/auto-pairs' "Bracket pair insertion
     Plugin 'tiagofumo/vim-nerdtree-syntax-highlight' "Helped for Nerdtree
-    Plugin 'tpope/vim-commentary'
-    Plugin 'tpope/vim-surround'
+    Plugin 'tpope/vim-commentary' "Insert comment bar
+    Plugin 'tpope/vim-surround' "Fast changing surrounding characters
     Plugin 'jayden-chan/onedark.vim' "Theme plugin
     Plugin 'godlygeek/tabular' "Allignment automation
     Plugin 'junegunn/goyo.vim'
     Plugin 'buoto/gotests-vim' "Testing plugin for go
     Plugin 'sheerun/vim-polyglot' "Syntax highlighting for many languages
+    Plugin 'w0rp/ale' "Syntax Hylighting
 
     call vundle#end()
     filetype plugin indent on
@@ -101,6 +101,9 @@ filetype off
     noremap t gk
     noremap n gj
     noremap s l
+    
+    noremap j N
+    noremap k n
 
     " Maps the keys for jumping to end of line, or up/down 10 lines
     noremap H g^
@@ -121,10 +124,6 @@ filetype off
 
     " Reload vimrc
     map <leader>ss :so $MYVIMRC<CR>
-
-    " Map Ctrl-s to save because I am a compulsive saver
-    nmap <c-s> :wa<CR>
-    imap <c-s> <Esc>:wa<CR>
 
     " Spell check
     map <F6> :setlocal spell! spelllang=en_ca<CR>
@@ -192,6 +191,13 @@ filetype off
     let g:go_highlight_types = 1
     let g:go_highlight_variable_declarations = 1
 
+    "Ale Shortcuts
+    nnoremap <silent> ]e :ALENext<CR>
+    nnoremap <silent> [e :ALEPrevious<CR>
+    nnoremap <silent> <leader>o :ALEGoToDefinition<CR>
+    nnoremap <silent> <leader>O :ALEGoToDefinitionInVSplit<CR>
+    let g:ale_completion_enabled = 1
+
     " Commands
 
     " Make leaving easier in case of typos
@@ -226,3 +232,4 @@ filetype off
     iab thsi     this
     iab fcuntoin function
     iab fucntion function
+    iab yor      for
