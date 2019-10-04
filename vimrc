@@ -7,6 +7,7 @@ filetype off
 " Plugins
 
     set rtp+=$HOME/.vim/bundle/Vundle.vim
+    set rtp+=/usr/local/opt/fzf
     call vundle#begin()
 
     Plugin 'VundleVim/Vundle.vim' "Package manager for Vim
@@ -25,6 +26,9 @@ filetype off
     Plugin 'buoto/gotests-vim' "Testing plugin for go
     Plugin 'sheerun/vim-polyglot' "Syntax highlighting for many languages
     Plugin 'w0rp/ale' "Syntax Hylighting
+    Plugin 'junegunn/fzf.vim' "Vim cross file searching
+    Plugin 'rust-lang/rust.vim'
+    Plugin 'jph00/swift-apple'
 
     call vundle#end()
     filetype plugin indent on
@@ -160,7 +164,7 @@ filetype off
 
     " Plugin specific settings
 
-    let NERDTreeMapOpenSplit='h'
+    let NERDTreeMapOpenInTab='y'
     map <c-n> :NERDTreeToggle<CR>
 
     let g:snipMate = get(g:, 'snipMate', {})
