@@ -71,13 +71,15 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 alias god='cd ~/go/src/github.com/jayden-chan/battlesnake'
+alias :q='exit'
+alias vim='nvim'
 
 # SSH Alias
 alias sengconnect='ssh cobeyhollier@shell.seng.uvic.ca'
 alias cscconnect='ssh cobeyhollier@linux.csc.uvic.ca'
 
 # Quick CD changing
-alias school='cd /Users/cobeyhollier/Library/Mobile\ Documents/com~apple~CloudDocs/UVIC/Y2S3'
+alias school='cd /Users/cobeyhollier/Google\ Drive/UVIC/Y3S1'
 
 # Typo Fixing
 alias claer='clear'
@@ -113,3 +115,12 @@ function maketex() {
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/cobeyhollier/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/cobeyhollier/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/cobeyhollier/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/cobeyhollier/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+export NVM_DIR="/Users/cobeyhollier/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
