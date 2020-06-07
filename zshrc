@@ -2,15 +2,14 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/cobeyhollier/.oh-my-zsh"
+export ZSH="/home/cobey/omzsh/.oh-my-zsh"
 export PS1="[%* - %D] %d %% "
-(cat ~/.cache/wal/sequences &)
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="agnoster"
-DEFAULT_USER=cobeyhollier
+DEFAULT_USER=$USER
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
 # cause zsh load theme from this variable instead of
@@ -65,12 +64,12 @@ DEFAULT_USER=cobeyhollier
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  zsh-apple-touchbar
+  zsh-autosuggestions
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
 
-alias god='cd ~/go/src/github.com/jayden-chan/battlesnake'
 alias :q='exit'
 alias vim='nvim'
 
@@ -86,13 +85,9 @@ alias claer='clear'
 alias clera='clear'
 alias crela='clear'
 alias celar='clear'
+alias vim='nvim'
 
-prompt_dir() {
-  prompt_segment blue black "${PWD##*/} ~"
-}
-function maketex() {
-    latexmk -pdf -pvc $1
-}
+promp_context(){}
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -115,7 +110,6 @@ function maketex() {
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/cobeyhollier/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/cobeyhollier/Downloads/google-cloud-sdk/path.zsh.inc'; fi
 
