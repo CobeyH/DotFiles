@@ -1,168 +1,108 @@
 {
-    "folders": [],
-    "keyboard.dispatch": "keyCode",
-    "settings": {},
-    "editor.formatOnSave": true,
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "folders": [],
+  "keyboard.dispatch": "keyCode",
+  "settings": {},
+  "editor.formatOnSave": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "cSpell.enabledLanguageIds": [
+    "asciidoc",
+    "c",
+    "cpp",
+    "csharp",
+    "css",
+    "git-commit",
+    "go",
+    "handlebars",
+    "haskell",
+    "html",
+    "jade",
+    "java",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "jsonc",
+    "latex",
+    "less",
+    "markdown",
+    "php",
+    "plaintext",
+    "pug",
+    "python",
+    "restructuredtext",
+    "rust",
+    "scala",
+    "scss",
+    "text",
+    "typescriptreact",
+    "yaml",
+    "yml"
+  ],
+  "vim.useSystemClipboard": true,
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["t"],
+      "after": ["k"]
     },
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "cSpell.enabledLanguageIds": [
-        "asciidoc",
-        "c",
-        "cpp",
-        "csharp",
-        "css",
-        "git-commit",
-        "go",
-        "handlebars",
-        "haskell",
-        "html",
-        "jade",
-        "java",
-        "javascript",
-        "javascriptreact",
-        "json",
-        "jsonc",
-        "latex",
-        "less",
-        "markdown",
-        "php",
-        "plaintext",
-        "pug",
-        "python",
-        "restructuredtext",
-        "rust",
-        "scala",
-        "scss",
-        "text",
-        "typescriptreact",
-        "yaml",
-        "yml"
-    ],
-    "vim.useSystemClipboard": true,
-    "vim.normalModeKeyBindings": [
-        {
-            "before": [
-                "t"
-            ],
-            "after": [
-                "k"
-            ]
-        },
-        {
-            "before": [
-                "n"
-            ],
-            "after": [
-                "j"
-            ]
-        },
-        {
-            "before": [
-                "s"
-            ],
-            "after": [
-                "l"
-            ]
-        },
-        {
-            "before": [
-                "H"
-            ],
-            "after": [
-                "g",
-                "^"
-            ]
-        },
-        {
-            "before": [
-                "S"
-            ],
-            "after": [
-                "g",
-                "$"
-            ]
-        },
-        {
-            "before": [
-                "T"
-            ],
-            "after": [
-                "t",
-                "t"
-            ]
-        },
-        {
-            "before": [
-                "N"
-            ],
-            "after": [
-                "10<c-d>"
-            ]
-        },
-        {
-            "before": [
-                "k"
-            ],
-            "after": [
-                "n"
-            ]
-        },
-        {
-            "before": [
-                "K"
-            ],
-            "after": [
-                "N"
-            ]
-        }
-    ],
-    "vim.visualModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                ">"
-            ],
-            "commands": [
-                "editor.action.indentLines"
-            ]
-        },
-        {
-            "before": [
-                "<"
-            ],
-            "commands": [
-                "editor.action.outdentLines"
-            ]
-        },
-        {
-            "before": [
-                "t"
-            ],
-            "after": [
-                "k"
-            ]
-        },
-        {
-            "before": [
-                "n"
-            ],
-            "after": [
-                "j"
-            ]
-        }
-    ],
-    "window.zoomLevel": 0,
-    "cSpell.userWords": [
-        "jsonata",
-        "saasquatch"
-    ],
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    {
+      "before": ["n"],
+      "after": ["j"]
     },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    {
+      "before": ["s"],
+      "after": ["l"]
     },
-    "explorer.confirmDragAndDrop": false,
-    "explorer.confirmDelete": false
+    {
+      "before": ["H"],
+      "after": ["g", "^"]
+    },
+    {
+      "before": ["S"],
+      "after": ["g", "$"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    },
+    {
+      "before": ["t"],
+      "after": ["k"]
+    },
+    {
+      "before": ["n"],
+      "after": ["j"]
+    },
+    {
+      "before": ["s"],
+      "after": ["l"]
+    },
+    {
+      "before": ["H"],
+      "after": ["g", "^"]
+    }
+  ],
+  "window.zoomLevel": 3,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "liveshare.presence": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "diffEditor.renderSideBySide": false
 }
